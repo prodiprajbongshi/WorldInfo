@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Country from "./pages/Country";
 import Error from "./pages/Error";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -31,11 +33,20 @@ const App = () => {
           element: <Country />,
         },
 
- 
         {
           path: "contact",
 
           element: <Contact />,
+        },
+        {
+          path: "privacy-policy",
+
+          element: <PrivacyPolicy />,
+        },
+        {
+          path: "terms",
+
+          element: <Terms />,
         },
       ],
     },

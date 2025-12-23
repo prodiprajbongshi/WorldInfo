@@ -14,19 +14,25 @@ const Footer = () => {
 
           {/* Right */}
           <div className="flex space-x-6 text-sm">
-            <span className="hover:text-blue-500 cursor-pointer transition">
-              Privacy Policy
-            </span>
-            <span className="hover:text-blue-500 cursor-pointer transition">
-              Terms
-            </span>
-            <span className="hover:text-blue-500 cursor-pointer transition">
-              Contact
-            </span>
+            <NavLink to="privacy-policy">
+              <span className="hover:text-blue-500 cursor-pointer transition">
+                Privacy Policy
+              </span>
+            </NavLink>
+            <NavLink to="terms">
+              <span className="hover:text-blue-500 cursor-pointer transition">
+                Terms
+              </span>
+            </NavLink>
+            <NavLink to="contact">
+              <span className="hover:text-blue-500 cursor-pointer transition">
+                Contact
+              </span>
+            </NavLink>
           </div>
         </div>
         <hr className="my-3" />
-        <div className="">
+        <div className="mt-6">
           <div className="text-center">
             <p className="text-sm">
               © {new Date().getFullYear()}{" "}
