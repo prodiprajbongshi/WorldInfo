@@ -8,6 +8,7 @@ import Country from "./pages/Country";
 import Error from "./pages/Error";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Terms from "./pages/Terms";
+import CountryDetails from "./components/section/CountryDetails";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -37,6 +38,11 @@ const App = () => {
           path: "contact",
 
           element: <Contact />,
+        },
+        {
+          path: "country/:id",
+
+          element: <CountryDetails />,
         },
         {
           path: "privacy-policy",

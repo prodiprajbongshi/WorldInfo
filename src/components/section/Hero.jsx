@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-
 const Hero = () => {
   return (
     <div className="container mx-auto ">
@@ -17,15 +16,23 @@ const Hero = () => {
           </p>
           <NavLink className="cursor-pointer" to="/country">
             <div className="flex items-center justify-center w-48 py-1.5 rounded-sm outline-2 outline-blue-200  bg-gray-400 ">
-              <input className="cursor-pointer" type="button" value="Start Exploring" />
+              <input
+                className="cursor-pointer"
+                type="button"
+                value="Start Exploring"
+              />
               <span className="ml-2">
                 <FaLongArrowAltRight />
               </span>
             </div>
           </NavLink>
         </div>
-        <div className="w-full md:w-[50%] mb-12 md:mb-0 ">
-            <img className="w-full" src="/home/heroImage.jpg" alt="World" />
+        <div className="w-full md:w-[50%] mb-12 md:mb-0 overflow-hidden">
+          <img
+            src="/home/heroImage.jpg"
+            alt="World"
+            className="w-full transform transition-transform duration-500 ease-in-out hover:scale-125 cursor-pointer "
+          />
         </div>
       </section>
     </div>
