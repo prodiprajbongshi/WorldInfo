@@ -10,7 +10,7 @@ const Home = () => {
 
 
   return (
-    <div className="bg-black text-white">
+    <div className="bg-black text-white pt-16">
       {/* hero section  */}
       <section>
         <Hero />

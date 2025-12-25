@@ -11,7 +11,7 @@ export const ContactForm = () => {
         Contact Us
       </h2>
 
-      <div className="  container mx-auto">
+      <div className="  container mx-auto px-4">
         <form
           className="flex flex-col max-w-xl mx-auto space-y-6 mt-10"
           action={handleFormSubmit}

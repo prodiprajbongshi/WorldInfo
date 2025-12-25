@@ -27,18 +27,19 @@ const Country = () => {
   );
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-black min-h-screen pt-16">
 
       {/* Search Section */}
       <CountrySearch search={search} setSearch={setSearch} />
 
       {/* Country List */}
-      <section className="container mx-auto px-4 py-10">
+      <section className="container mx-auto  px-4 py-10">
         {filteredCountries.length === 0 ? (
           <p className="text-center text-gray-400">
             No countries found.
           </p>
         ) : (
+          <div className=" flex items-center justify-center">
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredCountries.map((country, index) => {
               const { flags, name, population, region, capital } = country;
@@ -97,6 +98,7 @@ const Country = () => {
               );
             })}
           </ul>
+            </div>
         )}
       </section>
     </div>

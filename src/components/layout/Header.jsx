@@ -1,9 +1,30 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [show, setShow] = useState(true); // show/hide navbar
+  const [lastScroll, setLastScroll] = useState(0);
+
+  // scroll listener
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > lastScroll && currentScroll > 100) {
+        // scrolling down
+        setShow(false);
+      } else {
+        // scrolling up
+        setShow(true);
+      }
+      setLastScroll(currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScroll]);
 
   const linkClass = ({ isActive }) =>
     `text-xl transition-all duration-300
@@ -15,7 +36,11 @@ const Header = () => {
      }`;
 
   return (
-    <header className="bg-[#202020] text-white/90">
+    <header
+      className={`bg-[#202020] text-white/90 fixed top-0 w-full z-50 transition-transform duration-300 ${
+        show ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <section className="container mx-auto px-8 py-6">
         <div className="flex items-center justify-between relative">
           {/* Logo */}
@@ -50,15 +75,18 @@ const Header = () => {
           </nav>
 
           {/* Mobile Menu Icon */}
-          <button className="md:hidden text-3xl" onClick={() => setOpen(!open)}>
+          <button
+            className="md:hidden text-3xl"
+            onClick={() => setOpen(!open)}
+          >
             {open ? <IoMdClose /> : <IoMdMenu />}
           </button>
 
           {/* Mobile Menu */}
           <nav
             className={`md:hidden fixed top-0 left-0 h-screen w-[60%] bg-blue-500 z-50
-  transform transition-transform duration-300 ease-in-out
-  ${open ? "translate-x-0" : "-translate-x-full"}`}
+            transform transition-transform duration-300 ease-in-out
+            ${open ? "translate-x-0" : "-translate-x-full"}`}
           >
             <ul className="flex flex-col mt-20 ms-6 space-y-6">
               <li>
