@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "country": "France",
+    "fact": "France is the most visited country in the world with over 89 million tourists annually."
+  },
+  {
+    "id": 2,
+    "country": "Ethiopia",
+    "fact": "Ethiopia follows a calendar that is seven years and eight months behind the Western calendar."
+  },
+  {
+    "id": 3,
+    "country": "Canada",
+    "fact": "Canada has more lakes than the rest of the world's lakes combined."
+  },
+  {
+    "id": 4,
+    "country": "Japan",
+    "fact": "There is one vending machine for every 23 people in Japan."
+  },
+  {
+    "id": 5,
+    "country": "Russia",
+    "fact": "Russia has 11 different time zones, the most of any country in the world."
+  },
+  {
+    "id": 6,
+    "country": "Australia",
+    "fact": "Australia is home to more than 10,000 beaches; you could visit a new one every day for over 27 years."
+  },
+  {
+    "id": 7,
+    "country": "Iceland",
+    "fact": "Iceland is the only country in the world that has no mosquitoes."
+  },
+  {
+    "id": 8,
+    "country": "Brazil",
+    "fact": "Brazil is the only country in South America that speaks Portuguese."
+  },
+  {
+    "id": 9,
+    "country": "Egypt",
+    "fact": "The Great Pyramid of Giza was the tallest man-made structure in the world for over 3,800 years."
+  },
+  {
+    "id": 10,
+    "country": "Switzerland",
+    "fact": "It is illegal to own just one guinea pig in Switzerland because they are social animals and get lonely."
+  },
+  {
+    "id": 11,
+    "country": "Monaco",
+    "fact": "Monaco is smaller than New York City's Central Park."
+  },
+  {
+    "id": 12,
+    "country": "India",
+    "fact": "India has the largest postal network in the world, including a floating post office in Dal Lake, Srinagar."
+  },
+  {
+    "id": 13,
+    "country": "New Zealand",
+    "fact": "There are no snakes in the wild in New Zealand."
+  },
+  {
+    "id": 14,
+    "country": "Netherlands",
+    "fact": "The Netherlands has more bicycles than it has people."
+  },
+  {
+    "id": 15,
+    "country": "Bolivia",
+    "fact": "Bolivia is home to the Salar de Uyuni, the world's largest salt flat, which contains 10 billion tonnes of salt."
+  }
+]
