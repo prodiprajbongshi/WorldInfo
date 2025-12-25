@@ -24,7 +24,7 @@ const CountryDetails = () => {
   if (isPending) return <Loader />;
 
   return (
-    <div className="bg-black">
+    <div className="bg-black pt-16">
       <div className="max-w-6xl mx-auto px-4 py-10">
         {country && (
           <div
@@ -32,7 +32,7 @@ const CountryDetails = () => {
          "
           >
             <div
-              className="rounded-[2.5rem] p-6
+              className="rounded-[2.5rem] my-20 p-4
                     bg-linear-to-b from-[#1a1a1a] via-black to-[#0a0a0a]
                     shadow-[0_0_40px_rgba(255,255,255,0.08)]
                     border border-white/20"
