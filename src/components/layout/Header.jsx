@@ -41,11 +41,11 @@ const Header = () => {
         show ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <section className="container mx-auto px-8 py-6">
+      <section className="container mx-auto px-8 py-2">
         <div className="flex items-center justify-between relative">
           {/* Logo */}
-          <NavLink to="/" className="text-xl font-semibold">
-            <span className="text-blue-500 text-2xl">World</span> info
+          <NavLink to="/" className="max-w-62">
+          <img className="w-full h-full" src="/logos/logo.png" alt="Logo" />
           </NavLink>
 
           {/* Desktop Menu */}
